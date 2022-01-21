@@ -52,8 +52,12 @@ table {
   border-spacing: 0;
 }
 
-body {
+header {
   background-color: rebeccapurple;
+}
+
+main {
+  background-color: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */
