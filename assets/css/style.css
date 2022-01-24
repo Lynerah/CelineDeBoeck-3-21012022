@@ -73,9 +73,14 @@ main {
 
 .localisation__container {
   background-color: lightgray;
-  text-align: center;
   height: 50px;
   display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation__container .localisation__text {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
