@@ -60,4 +60,22 @@ main {
   background-color: aquamarine;
 }
 
+.navbar {
+  height: 50px;
+  background-color: azure;
+  box-shadow: 1px 1px 4px black;
+  text-align: center;
+  padding: 16px;
+}
+.navbar__logo {
+  height: 100%;
+}
+
+.localisation__container {
+  background-color: lightgray;
+  text-align: center;
+  height: 50px;
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
