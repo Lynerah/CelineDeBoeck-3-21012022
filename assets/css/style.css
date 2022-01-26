@@ -172,9 +172,17 @@ body {
   background-color: #F6F6F6;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 50px;
 }
 .restaurant__section__title {
   padding: 50px 0 50px 0;
+}
+
+.restaurant__section__cards {
+  height: 1050px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .card__restaurant {
@@ -185,7 +193,6 @@ body {
   min-height: 250px;
   border-radius: 20px;
   background-color: white;
-  border: 1px solid black;
 }
 .card__restaurant__vignette {
   position: absolute;

@@ -133,11 +133,18 @@ body{
    background-color: $secondary-background-color;
    padding-left: 20px;
    padding-right: 20px;
+   padding-bottom: 50px;
    &__title {
       padding: 50px 0 50px 0;
    }
 }
 
+.restaurant__section__cards{
+   height: 1050px;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-between;
+}
 .card__restaurant{
    position: relative;
    display: flex;
@@ -146,7 +153,6 @@ body{
    min-height: 250px;
    border-radius: 20px;
    background-color: white;
-   border: 1px solid black;
    &__vignette{
       position: absolute;
       top: 12px;
@@ -174,6 +180,9 @@ body{
          position: absolute;
          bottom: 30px;
          right: 20px;
+         .icon__heart--select{
+            
+         }
       }
       .restaurant__text__icon__heart{
          font-size: 24px;
