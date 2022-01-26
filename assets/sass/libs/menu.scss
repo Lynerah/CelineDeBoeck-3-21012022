@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 main{
-   background-color: yellow;
+   background-color: $tiercary-background-color;
 }
 .navbar__menu{
    display: flex;
@@ -47,5 +47,42 @@ main{
       right: 30px;
       bottom: 30px;
       font-size: 20px;
+   }
+}
+
+.section__menu{
+   margin: 0 20px 30px;
+}
+.section__menu__title{
+   text-transform: uppercase;
+}
+.menu__cards__container{
+   height: 270px;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-between;
+}
+.card__menu{
+   background-color: white;
+   border-radius: 20px;
+   width: 100%;
+   height: 80px;
+   padding: 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: center;
+   &__title{
+      width: 100%;
+      line-height: 1.8;
+      font-weight: bold;
+   }
+   &__p{
+      // width: 50%;
+   }
+   &__price{
+      // width: 20%;
+      display: flex;
+      justify-content: flex-end;
    }
 }

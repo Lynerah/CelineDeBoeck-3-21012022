@@ -8,6 +8,9 @@
 // $secondary-background-color: #F6F6F6;
 // $tiercary-background-color: #EAEAEA;
 
+*{
+   box-sizing: border-box;
+}
 header{
    background-color: $secondary-background-color;
 }
