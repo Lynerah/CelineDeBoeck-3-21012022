@@ -192,8 +192,11 @@ body{
 
 .footer__menu{
    padding: 20px;
+   background-color: #353535;
+   color: white;
    &__logo{
-      height: 20px;
+      font-size: 24px;
+      font-family: 'Shrikhand', cursive;
       margin-bottom: 10px;
    }
    &__item{
@@ -201,5 +204,11 @@ body{
    }
    &__icon{
      margin-right: 10px ;
+     .fa-utensils{
+      font-size: 16px;
+     }
+     .fa-hands-helping{
+        font-size: 11px;
+     }
    }
 }
