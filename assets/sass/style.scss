@@ -1,18 +1,15 @@
 @import 'libs/reset.scss';
-
-$primary-color:#9356DC;
-$secondary-color:#FF79DA;
-$tiercary-color:#99E2D0;
-$main-background-color: #FFFFFF;
-$secondary-background-color: #F6F6F6;
-$tiercary-background-color: #EAEAEA;
+@import 'libs/menu.scss';
+@import 'libs/variables.scss';
+// $primary-color:#9356DC;
+// $secondary-color:#FF79DA;
+// $tiercary-color:#99E2D0;
+// $main-background-color: #FFFFFF;
+// $secondary-background-color: #F6F6F6;
+// $tiercary-background-color: #EAEAEA;
 
 header{
    background-color: $secondary-background-color;
-}
-
-main{
-   background-color: aquamarine;
 }
 
 body{
@@ -181,7 +178,7 @@ body{
          bottom: 30px;
          right: 20px;
          .icon__heart--select{
-            
+
          }
       }
       .restaurant__text__icon__heart{

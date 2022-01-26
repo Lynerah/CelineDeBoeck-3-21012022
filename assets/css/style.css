@@ -52,12 +52,61 @@ table {
   border-spacing: 0;
 }
 
-header {
-  background-color: #F6F6F6;
+main {
+  background-color: yellow;
 }
 
-main {
-  background-color: aquamarine;
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu__return__container {
+  padding-left: 20px;
+}
+
+.navbar__menu__logo__container {
+  height: 26px;
+  margin: auto;
+  padding: 20px;
+}
+
+.navbar__menu__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.head__container {
+  width: 100%;
+  height: 270px;
+  background-image: url("../../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.head__text {
+  background-color: #EAEAEA;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  padding: 30px 20px;
+  position: relative;
+}
+.head__text__title {
+  font-family: "Shrikhand", cursive;
+  font-style: oblique;
+  font-size: 24px;
+}
+.head__text__icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 20px;
+}
+
+header {
+  background-color: #F6F6F6;
 }
 
 body {
