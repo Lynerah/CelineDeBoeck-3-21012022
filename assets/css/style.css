@@ -108,9 +108,14 @@ main {
 .section__menu {
   margin: 0 20px 30px;
 }
-
-.section__menu__title {
+.section__menu .section__menu__title {
   text-transform: uppercase;
+}
+.section__menu .underline__menu__title {
+  border: 1px solid #99E2D0;
+  width: 40px;
+  margin-left: 0;
+  margin-bottom: 15px;
 }
 
 .menu__cards__container {
