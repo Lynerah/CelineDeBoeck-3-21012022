@@ -86,3 +86,19 @@ main{
       justify-content: flex-end;
    }
 }
+
+.container__order__button{
+   width: 100%;
+   text-align: center;
+   .order__button{
+      width: 200px;
+      border-radius: 30px;
+      font-size: 16px;
+      padding: 16px;
+      margin-bottom: 50px;
+      color: white;
+      background: linear-gradient(169deg, $secondary-color 0%, $primary-color 53%);
+      border: none;
+      box-shadow: 2px 2px 4px black;
+   }
+}
