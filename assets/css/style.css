@@ -422,6 +422,10 @@ body {
 .footer__menu__item {
   line-height: 1.5;
 }
+.footer__menu__item a {
+  color: white;
+  text-decoration: none;
+}
 .footer__menu__icon {
   margin-right: 10px;
 }
