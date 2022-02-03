@@ -126,7 +126,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  animation: fadeIn linear 2s;
 }
 
 @keyframes fadeIn {
@@ -140,6 +139,7 @@ main {
   }
 }
 .card__menu {
+  position: relative;
   background-color: white;
   border-radius: 20px;
   width: 100%;
@@ -149,6 +149,16 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  animation: fadeIn 2s backwards;
+}
+.card__menu--1 {
+  animation-delay: 333.3333333333ms;
+}
+.card__menu--2 {
+  animation-delay: 666.6666666667ms;
+}
+.card__menu--3 {
+  animation-delay: 1000ms;
 }
 .card__menu__title {
   width: 100%;
@@ -159,7 +169,47 @@ main {
   display: flex;
   justify-content: flex-end;
 }
+.card__menu__addBtn {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  right: 0;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background-color: #99E2D0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1000ms;
+}
 
+.hover__btn {
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 1000ms;
+}
+.hover__btn:hover + .card__menu__addBtn {
+  transform: scaleX(1);
+}
+.hover__btn:hover + .card__menu__addBtn i {
+  animation: rotateIn 500ms 250ms;
+}
+.hover__btn:hover {
+  transform: scaleX(0.75);
+}
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center center;
+    transform: rotate(0);
+  }
+  100% {
+    transform-origin: center center;
+    transform: rotate(-360deg);
+  }
+}
 .container__order__button {
   width: 100%;
   text-align: center;
