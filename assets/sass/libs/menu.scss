@@ -115,10 +115,17 @@ $anim-delay: $anim-dur / 3;
       font-weight: bold;
    }
    &__p{
-      // width: 50%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      line-clamp: 2; 
+      -webkit-box-orient: vertical;
+      
    }
+
    &__price{
-      // width: 20%;
+      width: 20%;
       display: flex;
       justify-content: flex-end;
    }
@@ -138,6 +145,11 @@ $anim-delay: $anim-dur / 3;
       
    }
 }
+.card__menu__description{
+   display: flex;
+   justify-content: space-between;
+
+}
 
 .hover__btn{
    width: 100%;
@@ -152,7 +164,7 @@ $anim-delay: $anim-dur / 3;
       }
    }
    &:hover{
-      transform: scaleX(0.75);
+      // transform: scaleX(0.75);
    }
 }
 @keyframes rotateIn {

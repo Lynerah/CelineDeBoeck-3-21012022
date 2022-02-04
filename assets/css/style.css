@@ -165,7 +165,16 @@ main {
   line-height: 1.8;
   font-weight: bold;
 }
+.card__menu__p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .card__menu__price {
+  width: 20%;
   display: flex;
   justify-content: flex-end;
 }
@@ -184,6 +193,11 @@ main {
   transition: transform 1000ms;
 }
 
+.card__menu__description {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hover__btn {
   width: 100%;
   transform-origin: left;
@@ -196,10 +210,6 @@ main {
 .hover__btn:hover + .card__menu__addBtn i {
   animation: rotateIn 500ms 250ms;
 }
-.hover__btn:hover {
-  transform: scaleX(0.75);
-}
-
 @keyframes rotateIn {
   0% {
     transform-origin: center center;
