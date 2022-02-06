@@ -178,15 +178,23 @@ body{
       position: relative;
       &__icon{
          position: absolute;
+         width: 24px;
+         height: 24px;
          bottom: 30px;
          right: 20px;
-         .icon__heart--select{
+         background-image: url(../../assets/images/icon/heart-regular.svg);
+         background-repeat: no-repeat;
+         background-size: 24px;
 
+         &:hover{
+            animation: activeHeart 1000ms forwards;
          }
+      
       }
-      .restaurant__text__icon__heart{
-         font-size: 24px;
-      }
+      // .restaurant__text__icon__heart{
+      //    font-size: 24px;
+      //    background-image: url(../../assets/images/icon/heart-regular.svg);
+      // }
    }
    .restaurant__text{
       padding: 10px;
@@ -194,9 +202,23 @@ body{
          font-size: 18px;
          font-weight: bold;
          line-height: 1.5;
+
       }
    }
 
+}
+svg:hover {
+   fill: red;
+ }
+ 
+@keyframes activeHeart{
+   0%{
+      background-image: url(../../assets/images/icon/heart-regular.svg);
+   }
+   100%{
+      background-image: url(../../assets/images/icon/heart-solid.svg);
+      fill: red;
+   }
 }
 
 .footer__menu{
