@@ -1,0 +1,75 @@
+.pencil{
+   @keyframes pencilMove{
+      0%{
+         transform: translateX(0px);
+         opacity: 1;
+      }
+   
+      100%{
+         transform: translateX(250px);
+         opacity: 0;
+      }
+   }
+   position: absolute;
+   top: 35%;
+   left: 10%;
+   display: block;
+   animation: pencilMove 2000ms 150ms both;
+   .fa-pencil-alt{
+      font-size: 125px;
+      color: #FF79DA;
+      text-shadow: 1px 1px 3px #9356DC;
+   }
+}
+.loader{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+}
+.content__page{
+   @keyframes pageContent{
+      0%{
+         display: none;
+         opacity:0;
+      }
+      100%{
+         display:block;
+         opacity:1;
+      }
+   }
+   position: absolute;
+   top:0;
+   opacity: 0;
+   animation: pageContent 1000ms 1600ms both;
+}
+
+.line {
+   @keyframes line-animation {
+   0% {
+      transform: scaleX(0);
+      opacity: 1;
+
+  }
+  100% {
+      transform: scaleX(1);
+      opacity: 0;
+  }
+   }
+   position: absolute;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1.5;
+   letter-spacing: 3px;
+   text-shadow: 2px 2px 3px gray;
+   top: 49%;
+   left: 10%;
+   height: 25px;
+   width: 260px;
+   border-radius: 50px;
+   background: rgb(255,121,218);
+   background: linear-gradient(166deg, rgba(255,121,218,1) 15%, rgba(153,226,208,1) 50%, rgba(147,86,220,1) 81%); 
+   transform: scaleX(0);
+   transform-origin: 0% 50%;
+   animation: line-animation 2000ms 150ms;
+ }
