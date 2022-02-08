@@ -498,7 +498,7 @@ body {
   background-size: 24px;
 }
 .card__restaurant__text__icon:hover {
-  animation: activeHeart 1000ms forwards;
+  background-image: url(../../assets/images/icon/heart-solid.svg);
 }
 .card__restaurant .restaurant__text {
   padding: 10px;
@@ -509,19 +509,6 @@ body {
   line-height: 1.5;
 }
 
-svg:hover {
-  fill: red;
-}
-
-@keyframes activeHeart {
-  0% {
-    background-image: url(../../assets/images/icon/heart-regular.svg);
-  }
-  100% {
-    background-image: url(../../assets/images/icon/heart-solid.svg);
-    fill: red;
-  }
-}
 .footer__menu {
   padding: 20px;
   background-color: #353535;

@@ -186,16 +186,10 @@ body{
          background-image: url(../../assets/images/icon/heart-regular.svg);
          background-repeat: no-repeat;
          background-size: 24px;
-
-         &:hover{
-            animation: activeHeart 1000ms forwards;
-         }
-      
+            &:hover{
+               background-image: url(../../assets/images/icon/heart-solid.svg);
+            }
       }
-      // .restaurant__text__icon__heart{
-      //    font-size: 24px;
-      //    background-image: url(../../assets/images/icon/heart-regular.svg);
-      // }
    }
    .restaurant__text{
       padding: 10px;
@@ -208,20 +202,6 @@ body{
    }
 
 }
-svg:hover {
-   fill: red;
- }
- 
-@keyframes activeHeart{
-   0%{
-      background-image: url(../../assets/images/icon/heart-regular.svg);
-   }
-   100%{
-      background-image: url(../../assets/images/icon/heart-solid.svg);
-      fill: red;
-   }
-}
-
 .footer__menu{
    padding: 20px;
    background-color: #353535;
