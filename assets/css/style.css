@@ -321,6 +321,11 @@ main {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .content__page {
+    margin: 0 10%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -462,6 +467,8 @@ body {
   min-height: 250px;
   border-radius: 20px;
   background-color: white;
+  text-decoration: none;
+  color: black;
 }
 .card__restaurant__vignette {
   position: absolute;
@@ -534,6 +541,43 @@ body {
 }
 .footer__menu__icon .fa-hands-helping {
   font-size: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .callToAction {
+    height: 500px;
+    padding: 0 5%;
+    align-items: center;
+  }
+  .callToAction__text {
+    font-size: 32px;
+  }
+
+  .title__font {
+    font-size: 48px;
+  }
+
+  .callToAction__button {
+    font-size: 24px;
+  }
+
+  .menu__section__list {
+    height: auto;
+    padding-bottom: 4%;
+    justify-content: space-between;
+  }
+
+  .menu__section__item {
+    width: 30%;
+  }
+
+  .restaurant__section__cards {
+    height: 550px;
+    justify-content: space-around;
+  }
+  .restaurant__section__cards .card__restaurant {
+    width: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

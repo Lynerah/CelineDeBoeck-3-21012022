@@ -154,6 +154,8 @@ body{
    min-height: 250px;
    border-radius: 20px;
    background-color: white;
+   text-decoration: none;
+   color: black;
    &__vignette{
       position: absolute;
       top: 12px;
@@ -228,3 +230,37 @@ body{
      }
    }
 }
+
+@media screen and (min-width: 768px) {
+    .callToAction{
+       height: 500px;
+       padding: 0 5%;
+       align-items: center;
+       &__text{
+          font-size: 32px;
+       }
+    }
+    .title__font{
+      font-size: 48px;
+    }
+
+   .callToAction__button{
+      font-size: 24px;
+   }
+   .menu__section__list{
+      height: auto;
+      padding-bottom: 4%;
+      justify-content: space-between;
+   }
+   .menu__section__item{
+      width: 30%;
+   }
+   .restaurant__section__cards{
+      height: 550px;
+      justify-content: space-around;
+
+      .card__restaurant{
+         width: 45%;
+      }
+   }
+ }

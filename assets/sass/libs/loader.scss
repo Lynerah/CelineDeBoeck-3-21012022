@@ -73,3 +73,9 @@
    transform-origin: 0% 50%;
    animation: line-animation 2000ms 150ms;
  }
+
+ @media screen and (min-width: 768px) {
+   .content__page{
+      margin: 0 10% ;
+    }
+ }
