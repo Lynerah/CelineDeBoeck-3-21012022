@@ -22,9 +22,18 @@
    }
 }
 .loader{
+   @keyframes loaderContainer{
+      0%{
+         height: 100vh;
+      }
+      100%{
+         height: 0px;
+      }
+   }
    position: relative;
    width: 100%;
    height: 100vh;
+   animation: loaderContainer 1000ms 2150ms forwards;
 }
 .content__page{
    @keyframes pageContent{
