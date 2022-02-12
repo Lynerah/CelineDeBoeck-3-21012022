@@ -164,6 +164,7 @@ main {
   width: 100%;
   line-height: 1.8;
   font-weight: bold;
+  font-size: 20px;
 }
 .card__menu__p {
   overflow: hidden;
@@ -172,6 +173,7 @@ main {
   -webkit-line-clamp: 1;
   line-clamp: 1;
   -webkit-box-orient: vertical;
+  font-size: 18px;
 }
 .card__menu__price {
   width: 20%;
@@ -334,6 +336,10 @@ main {
   .content__page {
     margin: 0 10%;
   }
+
+  .navbar__menu__logo__container {
+    height: 38px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -484,6 +490,9 @@ body {
   background-color: white;
   text-decoration: none;
   color: black;
+}
+.card__restaurant:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 .card__restaurant__vignette {
   position: absolute;

@@ -113,6 +113,7 @@ $anim-delay: $anim-dur / 3;
       width: 100%;
       line-height: 1.8;
       font-weight: bold;
+      font-size: 20px;
    }
    &__p{
       overflow: hidden;
@@ -121,6 +122,7 @@ $anim-delay: $anim-dur / 3;
       -webkit-line-clamp: 1;
       line-clamp: 1; 
       -webkit-box-orient: vertical;
+      font-size: 18px;
       
    }
 
