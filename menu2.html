@@ -14,17 +14,24 @@
 <body>
    <header>
       <nav class="navbar__menu">
-         <div class="navbar__menu__return__container"><i class=" navbar__menu__return__icon fas fa-arrow-left"></i></div>
+         <a href="index.html">
+            <i class=" navbar__menu__return__icon fas fa-arrow-left"></i>
+         </a>
          <div class="navbar__menu__logo__container">
-            <img class="navbar__menu__logo" src="assets/images/logo/ohmyfood.png" alt="logo">
+            <a href="index.html">
+               <img class="navbar__menu__logo" src="assets/images/logo/ohmyfood.png" alt="logo">
+            </a>
          </div>
       </nav>
       <div class="head__container">
 
          <div class="head__text">
             <h1 class="head__text__title">La note enchantée</h1>
-            <i class="head__text__icon far fa-heart"></i>
-         </div>
+            <div class="head__text__icon icon__heart--select">
+               <svg>
+                  <use xlink:href="heart-reagular.svg#heart"></use>
+               </svg>
+            </div>         </div>
       </div>
    </header>
    <main>
@@ -39,27 +46,49 @@
                      <div>
                         <p class="card__menu__p">Accompagnés de leur crème à la truffe</p>
                      </div>
+                     <div class="card__menu__description">
+
+                     </div>
                      <p class="card__menu__price">25€</p>
                   </div>
-
                </div>
                <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--2">
-               <h3 class="card__menu__title">Caviar osciètre</h3>
-               <p class="card__menu__p">Sur blini à la farine de blé noir</p>
-               <p class="card__menu__price">35€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Caviar osciètre</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Sur blini à la farine de blé noir</p>
+                     </div>
+                     <p class="card__menu__price">35€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--3">
-               <h3 class="card__menu__title">Homard et espuma de mystère</h3>
-               <p class="card__menu__p">Mariné aux zests d'orange</p>
-               <p class="card__menu__price">20€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Homard et espuma de mystère</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Mariné aux zests d'orange</p>
+                     </div>
+                     <p class="card__menu__price">20€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--3">
-               <h3 class="card__menu__title">Foie gras de canard cuit entier</h3>
-               <p class="card__menu__p">Confiture de
-                  figue et pain toasté</p>
-               <p class="card__menu__price">35€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Foie gras de canard cuit entier</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Confiture de figue et pain toasté</p>
+                     </div>
+                     <p class="card__menu__price">35€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
          </div>
       </section>
@@ -68,19 +97,40 @@
          <hr class="underline__menu__title">
          <div class="menu__cards__container">
             <div class="card__menu card__menu--1">
-               <h3 class="card__menu__title">Noix de coquilles Saint-Jacques</h3>
-               <p class="card__menu__p">Sur lit de purée de céleri-rave</p>
-               <p class="card__menu__price">40€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Noix de coquilles Saint-Jacques</h3>
+                  <div class="card__menu__description">
+                     <div>   
+                        <p class="card__menu__p">Sur lit de purée de céleri-rave</p>
+                     </div>
+                     <p class="card__menu__price">40€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--2">
-               <h3 class="card__menu__title">Langoustine poêlée</h3>
-               <p class="card__menu__p">Purée de patate douce</p>
-               <p class="card__menu__price">35€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Langoustine poêlée</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Purée de patate douce</p>
+                     </div>
+                     <p class="card__menu__price">35€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--3">
-               <h3 class="card__menu__title">Mijoté de queue de boeuf</h3>
-               <p class="card__menu__p">Et riz sauvage aux zests de citron</p>
-               <p class="card__menu__price">44€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Mijoté de queue de boeuf</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Et riz sauvage aux zests de citron</p>
+                     </div>
+                     <p class="card__menu__price">44€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
          </div>
       </section>
@@ -89,20 +139,40 @@
          <hr class="underline__menu__title">
          <div class="menu__cards__container">
             <div class="card__menu card__menu--1">
-               <h3 class="card__menu__title">Macaron noisette et chocolat</h3>
-               <p class="card__menu__p">Glace au caramel brun et sel de Guérande</p>
-               <p class="card__menu__price">18€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Macaron noisette et chocolat</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Glace au caramel brun et sel de Guérande</p>
+                     </div>
+                     <p class="card__menu__price">18€</p>
+                  </div>
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--2">
-               <h3 class="card__menu__title">Baba
-                  au rhum revisité</h3>
-               <p class="card__menu__p">Avec son coulis de citron</p>
-               <p class="card__menu__price">22€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Baba au rhum revisité</h3>
+                     <div class="card__menu__description">
+                        <div>
+                           <p class="card__menu__p">Avec son coulis de citron</p>
+                        </div>
+                        <p class="card__menu__price">22€</p>
+                     </div>               
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
             <div class="card__menu card__menu--3">
-               <h3 class="card__menu__title">Tarte au citron meringuée</h3>
-               <p class="card__menu__p">Destructurée</p>
-               <p class="card__menu__price">23€</p>
+               <div class="hover__btn">
+                  <h3 class="card__menu__title">Tarte au citron meringuée</h3>
+                  <div class="card__menu__description">
+                     <div>
+                        <p class="card__menu__p">Destructurée</p>
+                     </div>
+                     <p class="card__menu__price">23€</p>
+                  </div>               
+               </div>
+               <button class="card__menu__addBtn"><i class="fas fa-check-circle"></i></button>
             </div>
          </div>
       </section>

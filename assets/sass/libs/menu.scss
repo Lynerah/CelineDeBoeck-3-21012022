@@ -51,9 +51,17 @@ main{
    }
    &__icon{
       position: absolute;
-      right: 30px;
-      bottom: 30px;
+      width: 25px;
+      height: 25px;
+      right: 45px;
+      bottom: 25px;
       font-size: 20px;
+      background-image: url(../../assets/images/icon/heart-regular.svg);
+      background-repeat: no-repeat;
+      background-size: 24px;
+         &:hover{
+            background-image: url(../../assets/images/icon/heart-solid.svg);
+         }
    }
 }
 
@@ -103,6 +111,7 @@ $anim-delay: $anim-dur / 3;
    flex-wrap: wrap;
    justify-content: space-between;
    align-content: center;
+   overflow: hidden;
    animation: fadeIn 2s backwards;
    @for $i from 1 through 3 {
       &--#{$i} {
@@ -132,9 +141,15 @@ $anim-delay: $anim-dur / 3;
       justify-content: flex-end;
    }
    &__addBtn{
-      width:20%;
-      height: 100%;
+      overflow: hidden;
       position: absolute;
+      width: 20%;
+      height: 100%;
+      top: 0;
+      right: 0; 
+      // width:100%;
+      // height: 100%;
+      // position: absolute;
       font-size: 25px;
       color: white;
       right: 0;
@@ -142,11 +157,19 @@ $anim-delay: $anim-dur / 3;
       border: none;
       background-color: $tiercary-color;
       transform-origin: right;
-      transform: scaleX(0);
+      transform: translateX(100%);
       transition: transform 1000ms; 
       
    }
 }
+// .parent__box__addBtn{
+//    overflow: hidden;
+//    position: absolute;
+//    width: 20%;
+//    height: 100%;
+//    top: 0;
+//    right: 0;   
+// }
 .card__menu__description{
    display: flex;
    justify-content: space-between;
@@ -159,13 +182,22 @@ $anim-delay: $anim-dur / 3;
    // transform: scaleX(1);
    // transition: transform 1000ms ;
    
-   
    &:hover + .card__menu__addBtn{
-      transform: scaleX(1);
-      i{
-         animation: rotateIn 500ms 250ms;
+         transform: translateX(0%);
+         i{
+            animation: rotateIn 500ms 250ms;
+         }
       }
-   }
+
+   // &:hover + .parent__box__addBtn{
+   //    .card__menu__addBtn{
+   //       transform: translateX(0%);
+   //       i{
+   //          animation: rotateIn 500ms 250ms;
+   //       }
+   //    }
+
+   // }
    &:hover{
       // transform: scaleX(0.75);
       animation: compressText 1000ms forwards;

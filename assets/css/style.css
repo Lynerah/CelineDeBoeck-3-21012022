@@ -103,9 +103,17 @@ main {
 }
 .head__text__icon {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  width: 25px;
+  height: 25px;
+  right: 45px;
+  bottom: 25px;
   font-size: 20px;
+  background-image: url(../../assets/images/icon/heart-regular.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+.head__text__icon:hover {
+  background-image: url(../../assets/images/icon/heart-solid.svg);
 }
 
 .section__menu {
@@ -149,6 +157,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  overflow: hidden;
   animation: fadeIn 2s backwards;
 }
 .card__menu--1 {
@@ -181,9 +190,12 @@ main {
   justify-content: flex-end;
 }
 .card__menu__addBtn {
+  overflow: hidden;
+  position: absolute;
   width: 20%;
   height: 100%;
-  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 25px;
   color: white;
   right: 0;
@@ -191,7 +203,7 @@ main {
   border: none;
   background-color: #99E2D0;
   transform-origin: right;
-  transform: scaleX(0);
+  transform: translateX(100%);
   transition: transform 1000ms;
 }
 
@@ -204,7 +216,7 @@ main {
   width: 100%;
 }
 .hover__btn:hover + .card__menu__addBtn {
-  transform: scaleX(1);
+  transform: translateX(0%);
 }
 .hover__btn:hover + .card__menu__addBtn i {
   animation: rotateIn 500ms 250ms;
