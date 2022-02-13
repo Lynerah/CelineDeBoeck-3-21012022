@@ -61,6 +61,7 @@ main {
   align-items: center;
   height: 50px;
   position: relative;
+  padding: 0 2%;
 }
 
 .navbar__menu__return__container {
@@ -352,6 +353,25 @@ main {
   .navbar__menu__logo__container {
     height: 38px;
   }
+
+  .pencil {
+    left: 25%;
+  }
+  @keyframes pencilMove {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(500px);
+      opacity: 0;
+    }
+  }
+
+  .line {
+    left: 25%;
+    width: 510px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -374,7 +394,6 @@ body {
 .navbar {
   height: 50px;
   background-color: #FFFFFF;
-  box-shadow: 1px 1px 4px black;
   text-align: center;
   padding: 16px;
 }
