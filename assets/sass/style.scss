@@ -262,14 +262,6 @@ body{
    .callToAction__button{
       font-size: 24px;
    }
-   .menu__section__list{
-      height: auto;
-      padding-bottom: 4%;
-      justify-content: space-between;
-   }
-   .menu__section__item{
-      width: 30%;
-   }
    .restaurant__section__cards{
       height: 550px;
       justify-content: space-around;
@@ -277,5 +269,15 @@ body{
       .card__restaurant{
          width: 45%;
       }
+   }
+ }
+ @media screen and (min-width: 1042px) {
+   .menu__section__list{
+      height: auto;
+      padding-bottom: 4%;
+      justify-content: space-between;
+   }
+   .menu__section__item{
+      width: 30%;
    }
  }

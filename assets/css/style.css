@@ -260,6 +260,18 @@ main {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 768px) {
+  .menu__cards__container {
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .card__menu {
+    width: 30%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
 .pencil {
   position: absolute;
   top: 35%;
@@ -624,6 +636,15 @@ body {
     font-size: 24px;
   }
 
+  .restaurant__section__cards {
+    height: 550px;
+    justify-content: space-around;
+  }
+  .restaurant__section__cards .card__restaurant {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1042px) {
   .menu__section__list {
     height: auto;
     padding-bottom: 4%;
@@ -632,14 +653,6 @@ body {
 
   .menu__section__item {
     width: 30%;
-  }
-
-  .restaurant__section__cards {
-    height: 550px;
-    justify-content: space-around;
-  }
-  .restaurant__section__cards .card__restaurant {
-    width: 45%;
   }
 }
 

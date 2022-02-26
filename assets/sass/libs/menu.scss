@@ -87,6 +87,7 @@ main{
    
 }
 
+
 @keyframes fadeIn {
    0% {
       opacity:0;
@@ -148,9 +149,6 @@ $anim-delay: $anim-dur / 3;
       height: 100%;
       top: 0;
       right: 0; 
-      // width:100%;
-      // height: 100%;
-      // position: absolute;
       font-size: 25px;
       color: white;
       right: 0;
@@ -163,14 +161,7 @@ $anim-delay: $anim-dur / 3;
       
    }
 }
-// .parent__box__addBtn{
-//    overflow: hidden;
-//    position: absolute;
-//    width: 20%;
-//    height: 100%;
-//    top: 0;
-//    right: 0;   
-// }
+
 .card__menu__description{
    display: flex;
    justify-content: space-between;
@@ -179,9 +170,6 @@ $anim-delay: $anim-dur / 3;
 
 .hover__btn{
    width: 100%;
-   // transform-origin: left;
-   // transform: scaleX(1);
-   // transition: transform 1000ms ;
    
    &:hover + .card__menu__addBtn{
          transform: translateX(0%);
@@ -190,17 +178,8 @@ $anim-delay: $anim-dur / 3;
          }
       }
 
-   // &:hover + .parent__box__addBtn{
-   //    .card__menu__addBtn{
-   //       transform: translateX(0%);
-   //       i{
-   //          animation: rotateIn 500ms 250ms;
-   //       }
-   //    }
 
-   // }
    &:hover{
-      // transform: scaleX(0.75);
       animation: compressText 1000ms forwards;
    }
 }
@@ -236,5 +215,17 @@ $anim-delay: $anim-dur / 3;
       background: linear-gradient(169deg, $secondary-color 0%, $primary-color 53%);
       border: none;
      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+   }
+}
+@media screen and (min-width: 768px) {
+   .menu__cards__container{
+      justify-content: space-between;
+      height: auto;
+   }
+
+   .card__menu{
+      width: 30%;
+      height: 100px;
+      margin-bottom: 20px;
    }
 }
