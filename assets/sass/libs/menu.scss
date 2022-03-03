@@ -3,6 +3,10 @@
 main{
    background-color: $tiercary-background-color;
 }
+
+header{
+
+}
 .navbar__menu{
    display: flex;
    align-items: center;
@@ -30,11 +34,24 @@ main{
 .head__container{
    width: 100%;
    height: 270px;
-   background-image: url("../../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
    display: flex;
    align-items: flex-end;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   &--bg__image1{
+      background-image: url("../../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+   }
+   &--bg__image2{
+      background-image: url("../../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+   }
+   &--bg__image3{
+      background-image: url("../../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+   }
+   &--bg__image4{
+      background-image: url("../../../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+   }
+
 }
 .head__text{
    background-color: $tiercary-background-color;
@@ -57,6 +74,7 @@ main{
       background-image: url(../../assets/images/icon/heart-regular.svg);
       background-repeat: no-repeat;
       background-size: 24px;
+      overflow: hidden;
          &:hover{
             background-image: url(../../assets/images/icon/heart-solid.svg);
          }
@@ -76,6 +94,8 @@ main{
       margin-bottom: 15px;
    }
 }
+
+
 .menu__cards__container{
    height: 270px;
    display: flex;
@@ -84,7 +104,9 @@ main{
    
 }
 
-
+.high__container{
+   height: 365px;
+}
 @keyframes fadeIn {
    0% {
       opacity:0;
@@ -167,6 +189,13 @@ $anim-delay: $anim-dur / 3;
 
 .hover__btn{
    width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   
+   &:hover + .compressText{
+      animation: compressText 1000ms forwards;
+   }
    
    &:hover + .card__menu__addBtn{
          transform: translateX(0%);
@@ -176,9 +205,7 @@ $anim-delay: $anim-dur / 3;
       }
 
 
-   &:hover{
-      animation: compressText 1000ms forwards;
-   }
+
 }
 
 @keyframes compressText{
@@ -212,6 +239,10 @@ $anim-delay: $anim-dur / 3;
       background: linear-gradient(169deg, $secondary-color 0%, $primary-color 53%);
       border: none;
      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+     &:hover{
+      box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.7);
+      filter: brightness(1.2);
+     }
    }
 }
 @media screen and (min-width: 768px) {

@@ -72,6 +72,7 @@ body{
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
         &:hover{
          box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.7);
+         filter: brightness(1.2);
         }
       }
    }
@@ -190,6 +191,7 @@ body{
          background-image: url(../../assets/images/icon/heart-regular.svg);
          background-repeat: no-repeat;
          background-size: 24px;
+         overflow: hidden;
             &:hover{
                background-image: url(../../assets/images/icon/heart-solid.svg);
             }
