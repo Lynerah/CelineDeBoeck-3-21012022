@@ -236,7 +236,7 @@ main {
   position: absolute;
   left: 0;
 }
-.hover__btn:hover + .compressText {
+.hover__btn:hover {
   animation: compressText 1000ms forwards;
 }
 .hover__btn:hover + .card__menu__addBtn {
@@ -311,6 +311,7 @@ main {
   100% {
     transform: translateX(250px);
     opacity: 0;
+    left: 0;
   }
 }
 .pencil .fa-pencil-alt {

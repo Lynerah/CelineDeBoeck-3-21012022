@@ -193,7 +193,8 @@ $anim-delay: $anim-dur / 3;
    position: absolute;
    left: 0;
    
-   &:hover + .compressText{
+   
+   &:hover{
       animation: compressText 1000ms forwards;
    }
    
