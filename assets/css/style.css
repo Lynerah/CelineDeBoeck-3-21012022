@@ -311,13 +311,21 @@ main {
   100% {
     transform: translateX(250px);
     opacity: 0;
-    left: 0;
+  }
+}
+@keyframes pencilWidth {
+  0% {
+    font-size: 125px;
+  }
+  100% {
+    font-size: 0;
   }
 }
 .pencil .fa-pencil-alt {
   font-size: 125px;
   color: #FF79DA;
   text-shadow: 1px 1px 3px #9356DC;
+  animation: pencilWidth 100ms 2150ms both;
 }
 
 .loader {
