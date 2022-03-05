@@ -75,6 +75,10 @@ main {
   display: flex;
   justify-content: center;
 }
+.navbar__menu__logo__container a {
+  width: 50%;
+  text-align: center;
+}
 
 .navbar__menu__logo {
   height: 100%;
@@ -192,10 +196,14 @@ main {
   line-height: 1.8;
   font-weight: bold;
   font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .card__menu__p {
   overflow: hidden;
-  text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   line-clamp: 1;
@@ -228,6 +236,7 @@ main {
 .card__menu__description {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .hover__btn {
@@ -235,6 +244,10 @@ main {
   height: 100%;
   position: absolute;
   left: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .hover__btn:hover {
   animation: compressText 1000ms forwards;

@@ -4,9 +4,6 @@ main{
    background-color: $tiercary-background-color;
 }
 
-header{
-
-}
 .navbar__menu{
    display: flex;
    align-items: center;
@@ -24,6 +21,10 @@ header{
    width: 100%;
    display: flex;
    justify-content: center;
+   a{
+      width: 50%;
+      text-align: center;
+   }
 
 }
 
@@ -144,15 +145,23 @@ $anim-delay: $anim-dur / 3;
       line-height: 1.8;
       font-weight: bold;
       font-size: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      line-clamp: 1; 
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
    }
    &__p{
       overflow: hidden;
-      text-overflow: ellipsis;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       line-clamp: 1; 
       -webkit-box-orient: vertical;
       font-size: 18px;
+
       
    }
 
@@ -184,6 +193,7 @@ $anim-delay: $anim-dur / 3;
 .card__menu__description{
    display: flex;
    justify-content: space-between;
+   width: 100%;
 
 }
 
@@ -192,8 +202,10 @@ $anim-delay: $anim-dur / 3;
    height: 100%;
    position: absolute;
    left: 0;
-   
-   
+   padding: 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
    &:hover{
       animation: compressText 1000ms forwards;
    }
