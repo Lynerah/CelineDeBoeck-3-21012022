@@ -198,16 +198,18 @@ main {
   font-size: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  line-clamp: 1;
+  
   -webkit-box-orient: vertical;
   overflow: hidden;
+  /* line-clamp: 1; */
 }
 .card__menu__p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  line-clamp: 1;
+  
   -webkit-box-orient: vertical;
+  /* line-clamp: 1; */
   font-size: 18px;
 }
 .card__menu__price {
