@@ -180,7 +180,6 @@ main {
   justify-content: space-between;
   align-content: center;
   overflow: hidden;
-  cursor: pointer;
   animation: fadeIn 2s backwards;
 }
 .card__menu--1 {
@@ -199,7 +198,6 @@ main {
   font-size: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -207,7 +205,6 @@ main {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  line-clamp: 1;
   -webkit-box-orient: vertical;
   font-size: 18px;
 }
@@ -249,12 +246,17 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 .hover__btn:hover {
   animation: compressText 1000ms forwards;
 }
 .hover__btn:hover + .card__menu__addBtn {
   transform: translateX(0%);
+  margin-right: -0.5em;
+  animation: rest 0.5s;
+  animation-fill-mode: forwards;
 }
 .hover__btn:hover + .card__menu__addBtn i {
   animation: rotateIn 500ms 250ms;
