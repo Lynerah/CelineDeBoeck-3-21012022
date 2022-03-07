@@ -134,6 +134,7 @@ $anim-delay: $anim-dur / 3;
    justify-content: space-between;
    align-content: center;
    overflow: hidden;
+   cursor: pointer;
    animation: fadeIn 2s backwards;
    @for $i from 1 through 3 {
       &--#{$i} {
@@ -267,3 +268,4 @@ $anim-delay: $anim-dur / 3;
       margin-bottom: 20px;
    }
 }
+
