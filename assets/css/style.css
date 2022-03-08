@@ -95,6 +95,8 @@ main {
 }
 .head__container--bg__image1 {
   background-image: url("../../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("https://github.com/Lynerah/CelineDeBoeck-3-21012022/blob/38ae57c6780a670812c9e732b5dcf9480fc66ed1/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("CelineDeBoeck-3-21012022/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 .head__container--bg__image2 {
   background-image: url("../../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
